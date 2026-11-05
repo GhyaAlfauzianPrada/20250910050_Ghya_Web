@@ -1,0 +1,166 @@
+/* ===== Pengaturan dasar ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f8f3;
+    color: #263b2d;
+    line-height: 1.6;
+}
+
+/* ===== Header dan navigasi ===== */
+.header {
+    background: linear-gradient(135deg, #315b43, #6d9774);
+    color: white;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: white; text-decoration: none; font-size: 14px; }
+.nav-links a:hover { color: #e1edcf; }
+
+/* ===== Bagian pembuka ===== */
+.hero { text-align: center; padding: 90px 20px 110px; }
+.subtitle, .section-label { font-size: 12px; letter-spacing: 3px; font-weight: bold; }
+.subtitle { color: #e1edcf; }
+.hero h1 { font-size: 42px; margin: 12px 0; }
+.hero-text { font-size: 18px; margin-bottom: 28px; }
+.button {
+    display: inline-block;
+    background-color: #f1f5e9;
+    color: #315b43;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.button:hover { background-color: white; transform: translateY(-3px); }
+
+/* ===== Bagian umum ===== */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 24px;
+    text-align: center;
+}
+.section-label { color: #6d9774; }
+.section h2 { font-size: 30px; margin: 8px 0 14px; }
+.section-description { color: #718074; margin-bottom: 35px; }
+
+/* ===== Tentang keluarga ===== */
+.about-text { max-width: 700px; margin: 0 auto; color: #5d6d60; }
+.motto {
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 28px;
+    background-color: #e8efe5;
+    border-radius: 16px;
+}
+.motto-icon { color: #6d9774; font-size: 26px; }
+.motto h3 { margin: 5px 0; }
+.motto p { color: #5d6d60; font-style: italic; }
+
+/* ===== Kartu anggota keluarga ===== */
+.family-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.family-card {
+    background-color: white;
+    width: 290px;
+    padding: 30px 22px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(49, 91, 67, 0.08);
+    transition: 0.3s;
+}
+.family-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(49, 91, 67, 0.15);
+}
+.family-photo {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e8efe5;
+    margin-bottom: 15px;
+}
+.family-role {
+    display: block;
+    color: #6d9774;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.family-card h3 { margin: 5px 0; font-size: 20px; }
+.hobby { color: #718074; font-size: 14px; }
+
+/* ===== Tautan ===== */
+.links-section { padding-top: 45px; }
+.link-list {
+    max-width: 650px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.link-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    color: #315b43;
+    text-decoration: none;
+    box-shadow: 0 3px 12px rgba(49, 91, 67, 0.05);
+    transition: 0.3s;
+}
+.link-list a:hover { background-color: #e8efe5; transform: translateX(4px); }
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #263b2d;
+    color: #e1edcf;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+}
+
+/* ===== Tampilan layar kecil ===== */
+@media (max-width: 650px) {
+    .navbar { flex-direction: column; }
+    .nav-links { justify-content: center; flex-wrap: wrap; gap: 14px; }
+    .hero { padding: 65px 20px 80px; }
+    .hero h1 { font-size: 30px; }
+    .hero-text { font-size: 16px; }
+    .section { padding: 55px 18px; }
+    .section h2 { font-size: 26px; }
+    .family-card { width: 100%; max-width: 320px; }
+}
