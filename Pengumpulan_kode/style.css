@@ -1,0 +1,83 @@
+/* ==========================================
+   LINK KODE PRAKTIKUM
+========================================== */
+
+.code-link-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.code-link {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-decoration: none;
+
+    color: #263248;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+
+.code-link:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.code-link > span {
+    font-size: 35px;
+}
+
+
+.code-link h3 {
+    margin-bottom: 6px;
+
+    color: #172554;
+}
+
+
+.code-link p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .code-link-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .code-link-container {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -4,90 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Navigasi</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Ghya<span>Website</span></div>
+        <div class="logo">
+            Ghya<span>Website</span>
+        </div>
 
         <ul class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#daftar">Daftar File</a></li>
-            <li><a href="#tentang">Tentang</a></li>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="#daftar">Daftar File</a>
+            </li>
+
+            <li>
+                <a href="#tentang">Tentang</a>
+            </li>
         </ul>
     </nav>
+
 
     <!-- HERO -->
     <section class="hero">
         <h1>Selamat Datang</h1>
+
         <p>
             Pusat navigasi untuk membuka berbagai halaman
             website HTML yang telah dibuat.
         </p>
-        <a href="#daftar" class="btn">Lihat Daftar File</a>
+
+        <a href="#daftar" class="btn">
+            Lihat Daftar File
+        </a>
     </section>
+
 
     <!-- DAFTAR FILE -->
     <section class="container" id="daftar">
+
         <h2>Daftar Halaman Website</h2>
-        <p class="subtitle">Pilihan halaman.</p>
+
+        <p class="subtitle">
+            Pilihan halaman.
+        </p>
+
 
         <div class="card-container">
 
+            <!-- PROFIL PRIBADI -->
             <div class="card">
-                <div class="icon">📄</div>
+                <div class="icon">👤</div>
+
                 <h3>Profil Pribadi</h3>
-                <p>Berisi informasi Pribadi.</p>
-                <a href="Profil_Pribadi/index.html" target="_blank">
+
+                <p>
+                    Berisi informasi pribadi.
+                </p>
+
+                <a href="Profil_Pribadi/index.html">
                     Buka Halaman
                 </a>
             </div>
 
+
+            <!-- PROFIL KELUARGA -->
             <div class="card">
-                <div class="icon">📄</div>
+                <div class="icon">👨‍👩‍👧</div>
+
                 <h3>Profil Keluarga</h3>
-                <p>Berisi informasi keluarga.</p>
-                <a href="Profil_Keluarga/profil_keluarga.html" target="_blank">
+
+                <p>
+                    Berisi informasi keluarga.
+                </p>
+
+                <a href="Profil_Keluarga/profil_keluarga.html">
                     Buka Halaman
                 </a>
             </div>
 
+
+            <!-- MODUL PDF -->
             <div class="card">
                 <div class="icon">📄</div>
+
                 <h3>Modul</h3>
-                <p>Berisi laporan praktikum</p>
-                <a href="pages/halaman3.html" target="_blank">
-                    Buka Halaman
+
+                <p>
+                    Berisi kumpulan laporan praktikum dalam bentuk PDF.
+                </p>
+
+                <!-- Tidak menggunakan target="_blank" -->
+                <a href="Pengumpulan_laprak/index.html">
+                    Lihat Modul PDF
                 </a>
             </div>
 
+
+            <!-- PRAKTIKUM -->
             <div class="card">
-                <div class="icon">📄</div>
+                <div class="icon">💻</div>
+
                 <h3>Praktikum</h3>
-                <p>Berisi kode kode praktikum.</p>
-                <a href="pages/halaman4.html" target="_blank">
-                    Buka Halaman
+
+                <p>
+                    Berisi kode-kode praktikum.
+                </p>
+
+                <a href="Pengumpulan_kode/pengumpulan_kode.html">
+                    Buka Praktikum
                 </a>
             </div>
 
         </div>
     </section>
 
+
     <!-- TENTANG -->
     <section class="about" id="tentang">
+
         <h2>Tentang Website</h2>
+
         <p>
             Website ini dibuat sebagai pusat navigasi
             untuk mengakses file HTML dengan mudah,
             cepat, dan terorganisir.
         </p>
+
     </section>
+
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 GhyaWebsite | Navigasi Halaman Web</p>
+        <p>
+            &copy; 2026 GhyaWebsite | Navigasi Halaman Web
+        </p>
     </footer>
 
 </body>
